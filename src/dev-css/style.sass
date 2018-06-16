@@ -1,0 +1,98 @@
+html, body
+  height: 100%
+  overflow-x: hidden
+
+body
+  position: relative
+  margin: 0
+  padding: 0
+  font-family: sans-serif
+  background-image: url(assets/04.jpg)
+  background-size: cover
+  background-position: center
+
+.box
+  width: 100%
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translatey(-50%)
+  padding: 30px 0
+  background: rgba(0, 0, 0, .6)
+  color: #fff
+  &__alert
+    font-size: 14px
+    position: absolute
+    top: 10px
+    left: 50%
+    transform: translatex(-50%)
+    width: 100%
+    max-width: 522px
+    height: 40px
+    line-height: 40px
+    text-align: center
+    border-radius: 2px
+    text-transform: uppercase
+    font-weight: 700
+    opacity: 0
+    transition: opacity .3s ease-in-out
+    &.error
+      opacity: 1
+      background: #CA2121
+    &.success
+      opacity: 1
+      background: #29B87E
+
+.login-form
+  width: 100%
+  max-width: 550px
+  margin: 0 auto
+  fieldset
+    margin-top: 30px
+    border: 0
+  &__label
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: 700
+    margin-bottom: 10px
+    display: inline-block
+  &__field
+    font-size: 20px
+    color: #fff
+    background-color: transparent
+    padding: 15px
+    margin-bottom: 30px
+    box-sizing: border-box
+    border-radius: 2px
+    transition: .3s ease-in-out
+    &--input
+      width: 100%
+      border: 1px solid rgba(255, 255, 255, .7)
+    &:focus
+      outline: none
+    &.error
+      border-color: #CA2121
+    &--checkbox
+      float: left
+      margin-right: 15px
+      border: 1px solid rgba(255, 255, 255, .7)
+      appearance: none
+      width: 15px
+      height: 15px
+      padding: 0
+      background-color: transparent
+      &:checked
+        background-color: #ee6d28
+    &--btn
+      float: right
+      border: 1px solid #ee6d28
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 16px
+      padding: 15px 45px
+      background-color: rgba(240, 110, 40, .6)
+      @media screen and (max-width: 767px)
+        width: 100%
+      &:hover
+        cursor: pointer
+        background-color: rgba(240, 110, 40, 1)
