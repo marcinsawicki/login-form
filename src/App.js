@@ -80,12 +80,13 @@ class App extends Component {
           </div>
           {
           !this.state.isValidate &&
-          <Form email={this.state.email}
-                emailError={this.state.emailError}
-                password={this.state.password}
-                passwordError={this.state.passwordError}
-                onFieldChange={this.onFieldChange.bind(this)}
-                formSubmit={this.formSubmit.bind(this)}
+          <Form
+            email={this.state.email}
+            emailError={this.state.emailError}
+            password={this.state.password}
+            passwordError={this.state.passwordError}
+            onFieldChange={this.onFieldChange.bind(this)}
+            formSubmit={this.formSubmit.bind(this)}
           />
           }
         </div>
