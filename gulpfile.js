@@ -8,7 +8,7 @@ gulp.task('sass', function () {
    .pipe(autoprefixer({
     browsers: ["last 2 version", "IE 10", "IE 11"]
     }))
-   .pipe(gulp.dest('./src/'));
+   .pipe(gulp.dest('./src/components/'));
 });
 
 gulp.task('watch',function() {

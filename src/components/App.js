@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import Form from './Form';
-import auth from './auth/auth.js';
+import auth from '../auth/auth.js';
 
 class App extends Component {
   constructor(props) {
@@ -70,12 +70,12 @@ class App extends Component {
   render() {
 
     let msg = this.state.resMsg;
-    let style = this.state.resError ? "error" : "success";
+    let style = this.state.resError ? 'error' : 'success';
 
     return (
       <div>
-        <div className="box">
-          <div className={"box__alert " + (msg && style) }>
+        <div className='box'>
+          <div className={'box__alert ' + (msg && style) }>
             {msg}
           </div>
           {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import PropTypes from 'prop-types';
-import App from './App';
-import Form from './Form';
+import App from '../components/App';
+import Form from '../components/Form';
 
 it('App renders without crashing', () => {
   shallow(<App />);

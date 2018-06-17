@@ -4,29 +4,29 @@ import FormInput from './FormInput';
 
 const Form = props => {
   return (
-    <form onSubmit={props.formSubmit} className="login-form">
+    <form onSubmit={props.formSubmit} className='login-form'>
       <fieldset>
         <FormInput
           isError={props.emailError}
           value={props.email}
-          type="text"
-          name="email"
-          id="email"
-          placeholder="email *"
+          type='text'
+          name='email'
+          id='email'
+          placeholder='email *'
           onFieldChange={props.onFieldChange}
         />
         <FormInput
           isError={props.passwordError}
           value={props.password}
-          type="password"
-          name="password"
-          id="password"
-          placeholder="password *"
+          type='password'
+          name='password'
+          id='password'
+          placeholder='password *'
           onFieldChange={props.onFieldChange}
         />
-        <input className="login-form__field login-form__field--checkbox" type="checkbox" name="remember" id="remember" />
-        <label className="login-form__label" htmlFor="remember">Remember me</label>
-      	<input className="login-form__field login-form__field--btn" type="submit" value="login" />
+        <input className='login-form__field login-form__field--checkbox' type='checkbox' name='remember' id='remember' />
+        <label className='login-form__label' htmlFor='remember'>Remember me</label>
+      	<input className='login-form__field login-form__field--btn' type='submit' value='login' />
       </fieldset>
     </form>
   );

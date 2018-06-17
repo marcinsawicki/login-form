@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const FormInput = props => {
   return (
     <div>
-      <label className="login-form__label" htmlFor={props.name}>{props.name}</label>
+      <label className='login-form__label' htmlFor={props.name}>{props.name}</label>
       <input
-        className={"login-form__field login-form__field--input " + ( props.isError ? "error" : "" ) }
+        className={'login-form__field login-form__field--input '+(props.isError?'error':'')}
         value={props.value}
         type={props.type}
         name={props.name}

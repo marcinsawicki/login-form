@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Form from './Form';
-import FormInput from './FormInput';
+import Form from '../components/Form';
+import FormInput from '../components/FormInput';
 
 it('Form component includes FormInput component', () => {
   const form = shallow(<Form />);
